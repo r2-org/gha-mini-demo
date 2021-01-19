@@ -17,8 +17,8 @@ jobs:
         k8s-version: 1.15.1
     - name: Testing
       run: |
-        opsgang/ga-setup-minikube@v0.1.1
         chmod +x /home/runner/.minikube/config/config.json
+        opsgang/ga-setup-minikube@v0.1.1     
         sudo minikube config set vm-driver none
         minikube config set kubernetes-version v1.15.1
         minikube start
