@@ -12,7 +12,6 @@ jobs:
       with:
         minikube-version: 1.4.0
         k8s-version: 1.15.1
-  
     - name: Testing
       run: |
         minikube config set vm-driver docker
