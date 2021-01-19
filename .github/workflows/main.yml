@@ -4,6 +4,7 @@ on: [pull_request, push]
 jobs:
   minikube-test:
     runs-on: ubuntu-latest
+    # Test
     steps:
     - uses: actions/checkout@master
       env:
