@@ -9,7 +9,7 @@ jobs:
       env:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true' 
     - uses: opsgang/ga-setup-minikube@v0.1.1   
-       env:
+      env:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true' 
       with:
         minikube-version: 1.4.0
