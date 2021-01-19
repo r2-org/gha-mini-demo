@@ -12,7 +12,7 @@ jobs:
       run: echo "$HOME/.local/bin" >> $GITHUB_PATH
     - name: start minikube 
       id: minikube
-      uses: medyagh/setup-minikube@master    
+      uses: medyagh/setup-minikube@v0.0.2    
     # now you can run kubectl to see the pods in the cluster
     - name: kubectl 
       run: kubectl get pods -A
