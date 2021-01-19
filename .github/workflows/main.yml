@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     name: job1
     steps:
+    -  name: set env variable
+       run: echo $ACTIONS_ALLOW_UNSECURE_COMMANDS
+       env: 
+         ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     - name: start minikube 
       id: minikube
       uses: medyagh/setup-minikube@master
